@@ -5,40 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="icon" type="image/x-icon" href="../assets/img/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header id="header">
+    <header >
         <img src="../assets/img/LogoInicio.png" alt="Salud Integral">
-        
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./quienesSomos.html">Quienes Somos</a>
-                </li>    
-                <li>
-                    <a href="./queHacemos.html">Que Hacemos</a>
-                </li>    
-                <li>
-                    <a href="./publicaciones.html">Publicaciones</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contactos</a>
-                </li> 
-                
-            </ul>
-        </nav>
-    </header>
-
+                    <nav class="navbar navbar-expand-lg ms-auto menu">
+                    <div class="container ms-auto">
+                        <button class="navbar-toggler btn-menu" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./quienesSomos.html">Quienes Somos</a>
+                        </li>    
+                        <li class="nav-item">
+                            <a class="nav-link"  href="./queHacemos.html">Que Hacemos</a>
+                        </li>    
+                        <li class="nav-item">
+                            <a class="nav-link" href="./publicaciones.html">Publicaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contactos</a>
+                        </li>  
+                    </ul>
+                    </div>
+                    </div>
+                </nav>
+        </header>
     <main>
-        <hr/>
+        <div class="contenedor-grid-Contacto">
         <h1 class="encabezadoContacto">Contacto</h1>
     <div class="divMainContactoFormulario">
         
-        <form action="" >
+        <form class="claseForm" action="" >
             <div>
                 <label for="nombre"  placeholder="Escribe tu nombre">Nombre:</label> 
                 <input type="text" name="nombre" id="nombre">
@@ -48,24 +54,25 @@
             <div>
             <label for="correo" placeholder="correo@email.com">Email:</label> <input type="email" name="correo" id="correo">
             </div>
-            <div>
+            <div clase="divTexArea">
             <label for="mensaje" placeholder="">Escribe un mensaje:</label>
             <br>
             <textarea name="tumensaje" rows="10" cols="25">Escribe tu mensaje</textarea>
             </div>
-            <DIV><input type="submit"> <P>Gracias por tu mensaje!</P></DIV>
+            <div><input type="submit"> <p>Gracias por tu mensaje!</p></div>
             
         </form>
     </div>  
+    </div>
 
     <footer>
-        <hr/>
+
         <section class="sectionFooter">
         <div class="divLeftFooter">
-            <p>Conocenos</p>
+            <img src="../assets/img/Pesa.png" alt="Contactanos">
         </div>
         <div class="divMidleFooter">
-        <p>Derechos Reservados: Miltokk 2024</p>
+        <h6>Derechos Reservados: Miltokk 2024</h6>
         </div>
         <div class="divRightFooter">
         <img src="../assets/img/Contacto.png" alt="Contactanos">
@@ -73,6 +80,8 @@
         </section>
 
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

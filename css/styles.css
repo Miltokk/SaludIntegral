@@ -4,67 +4,137 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 /* HEADER */
-header{
-    background-color: #F4F3E2;
-    display: flex;
 
+header{
+    background-color: #F4F3E2;   
+    display:flex
 }
+
+
 header img{
     padding-left:0 ;
-    width: 400px;
-    height: 150px;
+    width: 100vw;
+    height: 15vw;
 }
 
-header nav {
-    list-style: none;
-    padding-left: 0;
-    margin-left: 43%;
-    right: 2%;
-    position:absolute;
+.menu{
+    background-color: #F4F3E2;
+    width: 100vw;
 }
 
-header nav ul li{
-    display: inline-block;
-    padding-right: 0;
-    margin-top: 30%;
-    margin-right: 1px;
-    font-size: 100%;
-    font-style: normal ;
-    
-
+.container{
+    align-items: center;
 }
 
-header nav ul li a{
-    color:#A81D37;
-    padding-left: 0;
-    font-style: normal;
-    text-decoration: none;
-}
+
+
 /* Main Index*/
 
-.divPrincipalIndex{
+.contenedor-grid-index{
+    display: grid;
+    background-color: #F4F3E2;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 0.5fr 3fr ;
+    grid-template-areas: 
+    "bannerIzBlanco encabezado bannerDerBlanco"
+    "bannerIz contenidoCentral bannerDer"
+    ;
+}
+
+.encabezado{
+    grid-area: encabezado;
     text-align: center;
 }
 
-.divMainContactoFormulario  {
-    position: relative;
-    
+.contenidoCentral{
+    grid-area:contenidoCentral;
     text-align: center;
-
-
 }
 
+.contenidoCentral p {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.pieContenido{
+    grid-area:footer ;
+}
+
+.bannerIzquierdo{
+    grid-area: bannerIz;
+    background-color:#F4F3E2;
+}
+
+.bannerIzquierdo img{
+    height: 50vw;
+    width: 20vw;
+}
+.bannerDerecho{
+    grid-area: bannerDer;
+    background-color:#F4F3E2;
+}
+
+.bannerDerecho img{
+    height: 50vw;
+    width: 20vw;
+}
+
+.contenido-footer{
+    grid-area:footer;
+}
+
+.contenido-footer img{
+    height: 100%;
+    width: 100%;
+}
 .encabezadoContacto{
     text-align: center;
 }
+.contenedor-grid-Contacto{
+    display: grid;
+    background-color: #F4F3E2;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 0.5fr 3fr ;
+    grid-template-areas: 
+    "encabezado encabezado encabezado"
+    "bancoIz formulario blancoDer"
+    ;
+}
+
+.encabezadoContacto{
+    grid-area:encabezado ;
+}
+
+.divMainContactoFormulario{
+    text-align: center;
+    grid-area:formulario ;
+}
+
 
 .divPrincipalQuienesSomos{
     text-align: center; 
 }
 
+.divMainContactoFormulario{
+    display: grid;
+    background-color: #F4F3E2;
+    grid-template-columns: 1fr ;
+}
+label {
+    display: block;
+}
+
+button, input,textarea {
+    width: 100%;
+    padding: 1rem;
+}
+
+textarea {
+    resize: none;
+}
 
 
 .imgQuienesSomosBanner{
@@ -79,38 +149,97 @@ header nav ul li a{
 .divPrincipalQueHacemos {
     text-align: center;
 }
-
-
-/* Footer */
 footer{
-    background-color:#F4F3E2;
-    height: 200px;
+    background-color: #F4F3E2;   
 }
-footer section div{
-    position:absolute;
-    display: inline-block;
-    width: 100%;
-    
-}
-
-
-.divRightFooter{
-    right: 0%;
-    width: 33%;
-}
-
-.divMidleFooter{
-    right: 40%;
-    width: 33%;
+.sectionFooter{
+    display: grid;
+    background-color: #F4F3E2;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas: 
+    "ladoIzq centro ladoDer"
+    ;
+    align-content: center;
 }
 
 .divLeftFooter{
-    LEFT: 10%;
-    width: 33%;
+    grid-area:ladoIzq ;
+    text-align: center;
+}
+
+.divLeftFooter img{
+    width: 10vw;   
+    height: 10vw;
+}
+
+.divMidleFooter{
+    grid-area:centro ;
+    text-align: center;
+}
+
+.divRightFooter{
+    grid-area:ladoDer ;    
+    text-align: center;
+}
+.divRightFooter img{
+    width: 10vw;   
+    height: 10vw;
 }
 
 
-footer div img{
-    width: 200px;
-    height: 150px;
+@media screen and (max-width: 768px) {
+
+    header{
+        background-color: #F4F3E2;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .contenedor-grid-index{
+        display: grid;
+        background-color: #F4F3E2;
+        grid-template-columns: 1.5fr;
+        grid-template-rows: 0.1fr 1.5fr 0.3fr 0.3fr;
+        grid-template-areas: 
+        "encabezado"
+        "contenidoCentral"
+        "bannerIz"
+        "bannerDer"
+        ;
+    }
+
+
+    .bannerIzquierdo{
+        grid-area: bannerIz;
+        background-color:#F4F3E2;
+        text-align: center;
+    }
+    
+    .bannerIzquierdo img{
+        height: 60vw;
+        width: 50vw;
+    }
+    .bannerDerecho{
+        grid-area: bannerDer;
+        background-color:#F4F3E2;
+        text-align: center;
+    }
+    
+    .bannerDerecho img{
+        height: 80vw;
+        width: 50vw;
+    }
+    
+    .divLeftFooter img{
+        width: 15vw;   
+        height: 10vw;
+    }
+
+    .divRightFooter img{
+        width: 15vw;   
+        height: 10vw;
+    }
+    
 }

@@ -5,55 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 
-    <header id="header">
-        <img src="./assets/img/LogoInicio.png" alt="Salud Integral">
-        
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./pages/quienesSomos.html">Quienes Somos</a>
-                </li>    
-                <li>
-                    <a href="./pages/queHacemos.html">Que Hacemos</a>
-                </li>    
-                <li>
-                    <a href="./pages/publicaciones.html">Publicaciones</a>
-                </li>
-                <li>
-                    <a href="./pages/contacto.html">Contactos</a>
-                </li> 
-                
-            </ul>
-        </nav>
+    <header >
+    <img src="../assets/img/LogoInicio.png" alt="Salud Integral">
+                <nav class="navbar navbar-expand-lg ms-auto menu">
+                <div class="container ms-auto">
+                    <button class="navbar-toggler btn-menu" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/quienesSomos.html">Quienes Somos</a>
+                    </li>    
+                    <li class="nav-item">
+                        <a class="nav-link"  href="./pages/queHacemos.html">Que Hacemos</a>
+                    </li>    
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/publicaciones.html">Publicaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">Contactos</a>
+                    </li>  
+                </ul>
+                </div>
+                </div>
+            </nav>
     </header>
-
-
-    <hr/>
     <main>
-    <div class="divPrincipalIndex">
-        <H1>Pagina Inicio</H1>   
-    <p>
-        Texto en pagina de inicio
+        <div class="contenedor-grid-index">
+            <div class="encabezado"> 
+                <h1>Salud Integral</h1>
+            </div>
+            <div class="bannerIzquierdo">
+                <img src="../assets/img/bannerIzquierdo.png" alt="Ejercicio">
+            </div> 
+            <div class="bannerDerecho">
+                <img src="../assets/img/bannerDerecho.png" alt="ActividadFisica">
+            </div>   
+            <div class="contenidoCentral">
+                <h3> Por que es importante?</h3>
+                <p>
+                Datos publicados por INEGI Durante 2022, en México se contabilizaron 841,318 defunciones registradas
+                Del total de defunciones, 90.0 % fue por enfermedades y problemas relacionados con la salud
+                </p>
+                <p>
+                Las cinco principales causas de muerte a nivel nacional fueron: enfermedades del corazón, diabetes mellitus, tumores malignos, enfermedades del hígado,
+                Esta es la razon por que Salud integral debe de ser una prioridad y razon en tu vida para no ser parte de esta estadistica.
+                </p>
 
-    </p>
-    </div>         
+                <h3>Recientemente te has realizado chequeos medicos?</h3>
+                <p>La recomendacion es realizarse un chequeo medico por lo menos 1 vez al año  o cada dos año, en caso de que se perciban resultados anormales, el el médico decidirá la frecuencia de estas revisiones y el seguimiento   </p>
+                
+                <h3>Cuando fue la ultima vez que hiciste ejercicio?</h3>
+                <p>Para los adultos se debe de hacer un total de al menos 150 min de actividad aeróbica moderada intensidad o 75 minutos de alta intensidad cada semana</p>
+                <img src="../assets/img/Actividad150Min.png" alt="ActividadModerada">
+            </div>
+            </div>     
     </main>
 
     <footer>
-        <hr/>
+
         <section class="sectionFooter">
         <div class="divLeftFooter">
-            <p>Conocenos</p>
+            <img src="./assets/img/Pesa.png" alt="Contactanos">
         </div>
         <div class="divMidleFooter">
-        <p>Derechos Reservados: Miltokk 2024</p>
+        <h6>Derechos Reservados: Miltokk 2024</h6>
         </div>
         <div class="divRightFooter">
         <img src="./assets/img/Contacto.png" alt="Contactanos">
@@ -61,6 +87,11 @@
         </section>
 
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 </html>
 
