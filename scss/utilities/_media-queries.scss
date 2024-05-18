@@ -1,0 +1,143 @@
+@media screen and (max-width: 768px) {
+// GlobalHeaderMedia
+    header{       
+        background-color: #F4F3E2;
+        display: flex;
+        flex-wrap: wrap;    
+        button {
+        width: 100%;
+        }  
+        img{
+            height:25vw;
+        }   
+    }
+
+
+// Index
+    .contenedor-grid-index{
+        display: grid;
+        background-color: #F4F3E2;
+        grid-template-columns: 1.5fr;
+        grid-template-rows: 0.1fr 1.5fr 0.3fr 0.3fr;
+        grid-template-areas: 
+        "encabezado"
+        "contenidoCentral"
+        "bannerIz"
+        "bannerDer";
+        .bannerIzquierdo{
+            grid-area: bannerIz;
+            background-color:#F4F3E2;
+            text-align: center;
+            img{
+                height: 60vw;
+                width: 50vw;
+            }
+        }
+
+        .bannerDerecho{
+            grid-area: bannerDer;
+            background-color:#F4F3E2;
+            text-align: center;
+            img{
+                height: 80vw;
+                width: 50vw;
+            }
+        }
+    }
+
+
+    // QueHacemos
+
+    .divPrincipalQueHacemos-grid{
+        text-align: center;
+        display: flex;
+        background-color: #F4F3E2;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: 5px;
+        .card-alimentacion{
+            width: 75vw;
+            margin-bottom: 10px;
+            img{
+                height: 35vw;
+                width: 35vw;
+            }
+
+        }
+    
+        .card-habitos{
+            width: 75vw;
+            margin-bottom: 10px;
+            img{
+                height: 35vw;
+                width: 35vw;
+            }
+
+        }
+    
+        .card-ejercicio{
+            width: 75vw;
+            margin-bottom: 10px;
+            img{
+                height: 35vw;
+                width: 35vw;
+            }
+
+        }
+
+    }
+
+// Publicaciones
+    .divPrincipalPublicaciones-grid{
+        text-align: center;
+        display: flex;
+        background-color: #F4F3E2;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: 5px;
+        .card-CantidadProteina{
+            width: 75vw;
+            margin-bottom: 10px;
+            img{
+                height: 35vw;
+                width: 35vw;
+            }
+        }
+
+        .card-CantidadEjercicio{
+            width: 75vw;
+            margin-bottom: 10px;
+            img{
+                height: 35vw;
+                width: 35vw;
+            }
+        }
+
+        .card-LeerLibro{
+            width: 75vw;
+            margin-bottom: 10px;
+            img{
+                height: 35vw;
+                width: 35vw;
+            }
+
+        }
+
+    }
+
+    // footer Global
+    footer{
+        .divLeftFooter img{
+            width: 15vw;   
+            height: 10vw;
+        }
+    
+        .divRightFooter img{
+            width: 15vw;   
+            height: 10vw;
+        }
+    }
+
+
+
+}

@@ -1,0 +1,412 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+  background-color: #F4F3E2;
+  display: flex;
+}
+header img {
+  padding-left: 0;
+  width: 100vw;
+  height: 15vw;
+}
+header .menu {
+  background-color: #F4F3E2;
+  width: 100vw;
+}
+header .menu .container {
+  align-items: center;
+}
+
+.contenedor-grid-index {
+  display: grid;
+  background-color: #F4F3E2;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
+  grid-template-rows: 0.5fr 3fr;
+  grid-template-areas: "bannerIzBlanco encabezado bannerDerBlanco" "bannerIz contenidoCentral bannerDer";
+}
+.contenedor-grid-index .encabezado {
+  grid-area: encabezado;
+  text-align: center;
+}
+.contenedor-grid-index .contenidoCentral {
+  grid-area: contenidoCentral;
+  text-align: center;
+}
+.contenedor-grid-index .contenidoCentral p {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+.contenedor-grid-index .pieContenido {
+  grid-area: footer;
+}
+.contenedor-grid-index .bannerIzquierdo {
+  grid-area: bannerIz;
+  background-color: #F4F3E2;
+}
+.contenedor-grid-index .bannerIzquierdo img {
+  height: 50vw;
+  width: 20vw;
+}
+.contenedor-grid-index .bannerDerecho {
+  grid-area: bannerDer;
+  background-color: #F4F3E2;
+}
+.contenedor-grid-index .bannerDerecho img {
+  height: 50vw;
+  width: 20vw;
+}
+
+.imgQuienesSomosBanner {
+  width: 100%;
+  height: 200px;
+}
+
+.divPrincipalQuienesSomos {
+  text-align: center;
+  justify-content: center;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 10;
+  width: 75vw;
+  display: flex;
+  background-color: #d0ceb9;
+  border-radius: 5%;
+}
+.divPrincipalQuienesSomos p {
+  font-size: 25;
+  background-color: #d0ceb9;
+  border-radius: 5%;
+}
+
+.sectionBannerQueHacemos {
+  background-color: #F4F3E2;
+}
+.sectionBannerQueHacemos img {
+  width: 100%;
+  height: 15vw;
+}
+.sectionBannerQueHacemos h1 {
+  text-align: center;
+}
+
+.divPrincipalQueHacemos {
+  text-align: center;
+}
+
+.encabezado {
+  text-align: center;
+}
+
+.divPrincipalQueHacemos-grid {
+  text-align: center;
+  justify-content: space-around;
+  display: grid;
+  background-color: #F4F3E2;
+  grid-template-columns: 0.3fr 0.3fr 0.3fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "cardIz cardCentral cardDer";
+}
+.divPrincipalQueHacemos-grid .card-alimentacion {
+  grid-area: cardIz;
+  background-color: #d0ceb9;
+  border-radius: 5%;
+}
+.divPrincipalQueHacemos-grid .card-alimentacion img {
+  height: 20vw;
+  width: 20vw;
+}
+.divPrincipalQueHacemos-grid .card-alimentacion h5 {
+  background-color: rgba(208, 206, 185, 0);
+  border-radius: 10%;
+}
+.divPrincipalQueHacemos-grid .card-habitos {
+  grid-area: cardCentral;
+  background-color: #d0ceb9;
+  border-radius: 5%;
+}
+.divPrincipalQueHacemos-grid .card-habitos img {
+  height: 20vw;
+  width: 20vw;
+}
+.divPrincipalQueHacemos-grid .card-habitos h5 {
+  background-color: rgba(208, 206, 185, 0);
+  border-radius: 10%;
+}
+.divPrincipalQueHacemos-grid .card-ejercicio {
+  grid-area: cardDer;
+  background-color: #d0ceb9;
+  border-radius: 5%;
+}
+.divPrincipalQueHacemos-grid .card-ejercicio img {
+  height: 20vw;
+  width: 20vw;
+}
+.divPrincipalQueHacemos-grid .card-ejercicio h5 {
+  background-color: rgba(208, 206, 185, 0);
+  border-radius: 10%;
+}
+
+main {
+  background-color: #F4F3E2;
+}
+
+.encabezadoPublicaciones {
+  text-align: center;
+  background-color: #F4F3E2;
+}
+.encabezadoPublicaciones h1 {
+  background-color: #F4F3E2;
+}
+
+.divPrincipalPublicaciones-grid {
+  text-align: center;
+  justify-content: space-around;
+  display: grid;
+  background-color: #F4F3E2;
+  grid-template-columns: 0.3fr 0.3fr 0.3fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "cardIz cardCentral cardDer";
+}
+.divPrincipalPublicaciones-grid .card-CantidadProteina {
+  grid-area: cardIz;
+  background-color: #d0ceb9;
+  border-radius: 5%;
+}
+.divPrincipalPublicaciones-grid .card-CantidadProteina img {
+  height: 20vw;
+  width: 20vw;
+}
+.divPrincipalPublicaciones-grid .card-CantidadProteina h5 {
+  background-color: rgba(208, 206, 185, 0);
+  border-radius: 10%;
+}
+.divPrincipalPublicaciones-grid .card-CantidadProteina button {
+  border: none;
+  width: 15vw;
+  background-image: linear-gradient(to right, #F4F3E2, #d0ceb9);
+}
+.divPrincipalPublicaciones-grid .card-CantidadProteina button:hover {
+  background-image: linear-gradient(to left, #F4F3E2, #d0ceb9);
+}
+.divPrincipalPublicaciones-grid .card-CantidadEjercicio {
+  grid-area: cardCentral;
+  background-color: #d0ceb9;
+  border-radius: 5%;
+}
+.divPrincipalPublicaciones-grid .card-CantidadEjercicio img {
+  height: 20vw;
+  width: 20vw;
+}
+.divPrincipalPublicaciones-grid .card-CantidadEjercicio h5 {
+  background-color: rgba(208, 206, 185, 0);
+  border-radius: 10%;
+}
+.divPrincipalPublicaciones-grid .card-CantidadEjercicio button {
+  border: none;
+  width: 15vw;
+  background-image: linear-gradient(to right, #F4F3E2, #d0ceb9);
+}
+.divPrincipalPublicaciones-grid .card-CantidadEjercicio button:hover {
+  background-image: linear-gradient(to left, #F4F3E2, #d0ceb9);
+}
+.divPrincipalPublicaciones-grid .card-LeerLibro {
+  grid-area: cardDer;
+  background-color: #d0ceb9;
+  border-radius: 5%;
+}
+.divPrincipalPublicaciones-grid .card-LeerLibro img {
+  height: 20vw;
+  width: 20vw;
+}
+.divPrincipalPublicaciones-grid .card-LeerLibro h5 {
+  background-color: rgba(208, 206, 185, 0);
+  border-radius: 10%;
+}
+.divPrincipalPublicaciones-grid .card-LeerLibro button {
+  border: none;
+  width: 15vw;
+  background-image: linear-gradient(to right, #F4F3E2, #d0ceb9);
+}
+.divPrincipalPublicaciones-grid .card-LeerLibro button:hover {
+  background-image: linear-gradient(to left, #F4F3E2, #d0ceb9);
+}
+
+.contenedor-grid-Contacto {
+  display: grid;
+  background-color: #F4F3E2;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
+  grid-template-rows: 0.5fr 3fr;
+  grid-template-areas: "encabezado encabezado encabezado" "bancoIz formulario blancoDer";
+}
+.contenedor-grid-Contacto .encabezadoContacto {
+  text-align: center;
+  grid-area: encabezado;
+}
+.contenedor-grid-Contacto .divMainContactoFormulario {
+  text-align: center;
+  grid-area: formulario;
+  display: grid;
+  background-color: #F4F3E2;
+  grid-template-columns: 1fr;
+}
+.contenedor-grid-Contacto .divMainContactoFormulario label {
+  display: block;
+}
+.contenedor-grid-Contacto .divMainContactoFormulario button, .contenedor-grid-Contacto .divMainContactoFormulario input, .contenedor-grid-Contacto .divMainContactoFormulario textarea {
+  width: 100%;
+  padding: 1rem;
+}
+.contenedor-grid-Contacto .divMainContactoFormulario textarea {
+  resize: none;
+}
+
+footer {
+  background-color: #F4F3E2;
+}
+footer .sectionFooter {
+  display: grid;
+  background-color: #F4F3E2;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "ladoIzq centro ladoDer";
+  align-content: center;
+}
+footer .sectionFooter .divLeftFooter {
+  grid-area: ladoIzq;
+  text-align: center;
+}
+footer .sectionFooter .divLeftFooter img {
+  width: 10vw;
+  height: 10vw;
+}
+footer .sectionFooter .divMidleFooter {
+  grid-area: centro;
+  text-align: center;
+}
+footer .sectionFooter .divRightFooter {
+  grid-area: ladoDer;
+  text-align: center;
+}
+footer .sectionFooter .divRightFooter img {
+  width: 10vw;
+  height: 10vw;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    background-color: #F4F3E2;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  header button {
+    width: 100%;
+  }
+  header img {
+    height: 25vw;
+  }
+  .contenedor-grid-index {
+    display: grid;
+    background-color: #F4F3E2;
+    grid-template-columns: 1.5fr;
+    grid-template-rows: 0.1fr 1.5fr 0.3fr 0.3fr;
+    grid-template-areas: "encabezado" "contenidoCentral" "bannerIz" "bannerDer";
+  }
+  .contenedor-grid-index .bannerIzquierdo {
+    grid-area: bannerIz;
+    background-color: #F4F3E2;
+    text-align: center;
+  }
+  .contenedor-grid-index .bannerIzquierdo img {
+    height: 60vw;
+    width: 50vw;
+  }
+  .contenedor-grid-index .bannerDerecho {
+    grid-area: bannerDer;
+    background-color: #F4F3E2;
+    text-align: center;
+  }
+  .contenedor-grid-index .bannerDerecho img {
+    height: 80vw;
+    width: 50vw;
+  }
+  .divPrincipalQueHacemos-grid {
+    text-align: center;
+    display: flex;
+    background-color: #F4F3E2;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+  .divPrincipalQueHacemos-grid .card-alimentacion {
+    width: 75vw;
+    margin-bottom: 10px;
+  }
+  .divPrincipalQueHacemos-grid .card-alimentacion img {
+    height: 35vw;
+    width: 35vw;
+  }
+  .divPrincipalQueHacemos-grid .card-habitos {
+    width: 75vw;
+    margin-bottom: 10px;
+  }
+  .divPrincipalQueHacemos-grid .card-habitos img {
+    height: 35vw;
+    width: 35vw;
+  }
+  .divPrincipalQueHacemos-grid .card-ejercicio {
+    width: 75vw;
+    margin-bottom: 10px;
+  }
+  .divPrincipalQueHacemos-grid .card-ejercicio img {
+    height: 35vw;
+    width: 35vw;
+  }
+  .divPrincipalPublicaciones-grid {
+    text-align: center;
+    display: flex;
+    background-color: #F4F3E2;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+  .divPrincipalPublicaciones-grid .card-CantidadProteina {
+    width: 75vw;
+    margin-bottom: 10px;
+  }
+  .divPrincipalPublicaciones-grid .card-CantidadProteina img {
+    height: 35vw;
+    width: 35vw;
+  }
+  .divPrincipalPublicaciones-grid .card-CantidadEjercicio {
+    width: 75vw;
+    margin-bottom: 10px;
+  }
+  .divPrincipalPublicaciones-grid .card-CantidadEjercicio img {
+    height: 35vw;
+    width: 35vw;
+  }
+  .divPrincipalPublicaciones-grid .card-LeerLibro {
+    width: 75vw;
+    margin-bottom: 10px;
+  }
+  .divPrincipalPublicaciones-grid .card-LeerLibro img {
+    height: 35vw;
+    width: 35vw;
+  }
+  footer .divLeftFooter img {
+    width: 15vw;
+    height: 10vw;
+  }
+  footer .divRightFooter img {
+    width: 15vw;
+    height: 10vw;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

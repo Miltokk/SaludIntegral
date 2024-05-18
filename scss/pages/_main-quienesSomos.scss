@@ -1,0 +1,23 @@
+.imgQuienesSomosBanner{
+    width: 100%;
+    height: 200px;
+}
+
+.divPrincipalQuienesSomos{
+    text-align: center; 
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10;
+    width: 75vw;
+    display: flex;
+    background-color: #d0ceb9;
+    border-radius: 5%;
+    p{
+        font-size: 25;
+        background-color: #d0ceb9;
+        border-radius: 5%;
+    }
+}
+

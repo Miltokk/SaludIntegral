@@ -1,13 +1,13 @@
 /*  Selector de etiqueta */
 
 /* Estilo general */
-*{
+/* *{
     padding: 0;
     margin: 0;
     box-sizing: border-box; 
 }
 /* HEADER */
-
+/* 
 header{
     background-color: #F4F3E2;   
     display:flex
@@ -18,22 +18,22 @@ header img{
     padding-left:0 ;
     width: 100vw;
     height: 15vw;
-}
+} */ 
 
-.menu{
+/* .menu{
     background-color: #F4F3E2;
     width: 100vw;
 }
 
 .container{
     align-items: center;
-}
+} */
 
 
 
 /* Main Index*/
 
-.contenedor-grid-index{
+/* .contenedor-grid-index{
     display: grid;
     background-color: #F4F3E2;
     grid-template-columns: 0.2fr 1fr 0.2fr;
@@ -80,20 +80,20 @@ header img{
 .bannerDerecho img{
     height: 50vw;
     width: 20vw;
-}
+} */
 
-.contenido-footer{
+/* .contenido-footer{
     grid-area:footer;
 }
 
 .contenido-footer img{
     height: 100%;
     width: 100%;
-}
-.encabezadoContacto{
+} */
+/* .encabezadoContacto{
     text-align: center;
-}
-.contenedor-grid-Contacto{
+} */
+/* .contenedor-grid-Contacto{
     display: grid;
     background-color: #F4F3E2;
     grid-template-columns: 0.2fr 1fr 0.2fr;
@@ -134,10 +134,10 @@ button, input,textarea {
 
 textarea {
     resize: none;
-}
+} */
 
 
-.imgQuienesSomosBanner{
+/* .imgQuienesSomosBanner{
     width: 100%;
     height: 200px;
 }
@@ -148,8 +148,8 @@ textarea {
 }
 .divPrincipalQueHacemos {
     text-align: center;
-}
-footer{
+} */
+/* footer{
     background-color: #F4F3E2;   
 }
 .sectionFooter{
@@ -185,18 +185,18 @@ footer{
 .divRightFooter img{
     width: 10vw;   
     height: 10vw;
-}
+} */
 
 
 @media screen and (max-width: 768px) {
 
-    header{
+    /* header{
         background-color: #F4F3E2;
         display: flex;
         flex-wrap: wrap;
-    }
+    } */
 
-
+/* 
     .contenedor-grid-index{
         display: grid;
         background-color: #F4F3E2;
@@ -220,8 +220,8 @@ footer{
     .bannerIzquierdo img{
         height: 60vw;
         width: 50vw;
-    }
-    .bannerDerecho{
+    } */
+    /* .bannerDerecho{
         grid-area: bannerDer;
         background-color:#F4F3E2;
         text-align: center;
@@ -230,7 +230,7 @@ footer{
     .bannerDerecho img{
         height: 80vw;
         width: 50vw;
-    }
+    } */
     
     .divLeftFooter img{
         width: 15vw;   
