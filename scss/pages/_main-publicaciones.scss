@@ -1,13 +1,10 @@
-
 main{
-    background-color: #F4F3E2;   
+    background-color: $primary-color;   
 }
 .encabezadoPublicaciones{
     text-align: center;
-    background-color: #F4F3E2;   
-    h1{
-    background-color: #F4F3E2;   
-    }
+    background-color: $primary-color;   
+
 }
 
 .divPrincipalPublicaciones-grid{
@@ -15,7 +12,7 @@ main{
     justify-content:  space-around;
     
     display: grid;
-    background-color: #F4F3E2;
+    background-color: $primary-color;
     grid-template-columns: 0.3fr 0.3fr 0.3fr;
     grid-template-rows: 1fr ;
     grid-template-areas: 
@@ -23,69 +20,26 @@ main{
     ;
     .card-CantidadProteina{
         grid-area:cardIz;
-        background-color: #d0ceb9;
-        border-radius: 5%;
-        img{
-            height: 20vw;
-            width: 20vw;
-        }
-        h5{
-            background-color: #d0ceb900;
-            border-radius: 10%;
-        }
+        @include button-style;
         button{
-            border: none ;
-            width: 15vw;
-            background-image:  linear-gradient(to right, #F4F3E2, #d0ceb9);
-
-            &:hover{
-            background-image:  linear-gradient(to left, #F4F3E2, #d0ceb9);
-            }
+            @include button-comportamiento;
         }
     }
 
     .card-CantidadEjercicio{
         grid-area:cardCentral;
-        background-color: #d0ceb9;
-        border-radius: 5%;
-        img{
-            height: 20vw;
-            width: 20vw;
-        }
-        h5{
-            background-color: #d0ceb900;
-            border-radius: 10%;
-        }
+        @include button-style;
         button{
-            border: none ;
-            width: 15vw;
-            background-image:  linear-gradient(to right, #F4F3E2, #d0ceb9);
-            &:hover{
-                background-image:  linear-gradient(to left, #F4F3E2, #d0ceb9);
-            }
+            @include button-comportamiento;
         }
         
     }
 
     .card-LeerLibro{
         grid-area:cardDer;
-        background-color: #d0ceb9;
-        border-radius: 5%;
-        img{
-            height: 20vw;
-            width: 20vw;
-        }
-        h5{
-            background-color: #d0ceb900;
-            border-radius: 10%;
-        }
+        @include button-style;
         button{
-            border: none ;
-            width: 15vw;
-            background-image:  linear-gradient(to right, #F4F3E2, #d0ceb9);
-            &:hover{
-                background-image:  linear-gradient(to left, #F4F3E2, #d0ceb9);
-            }
+            @include button-comportamiento;
         }
     }
 

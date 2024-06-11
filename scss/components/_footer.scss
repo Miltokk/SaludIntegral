@@ -1,8 +1,8 @@
 footer{
-    background-color: #F4F3E2;   
+    background-color: $primary-color;   
     .sectionFooter{
         display: grid;
-        background-color: #F4F3E2;
+        background-color: $primary-color;
         grid-template-columns: 0.2fr 1fr 0.2fr;
         grid-template-rows: 1fr ;
         grid-template-areas: 

@@ -11,12 +11,12 @@ header {
 }
 header img {
   padding-left: 0;
-  width: 100vw;
-  height: 15vw;
+  width: 100vh;
+  height: 15vh;
 }
 header .menu {
   background-color: #F4F3E2;
-  width: 100vw;
+  width: 100vh;
 }
 header .menu .container {
   align-items: center;
@@ -49,19 +49,22 @@ header .menu .container {
   background-color: #F4F3E2;
 }
 .contenedor-grid-index .bannerIzquierdo img {
-  height: 50vw;
-  width: 20vw;
+  height: 50vh;
+  width: 20vh;
 }
 .contenedor-grid-index .bannerDerecho {
   grid-area: bannerDer;
   background-color: #F4F3E2;
 }
 .contenedor-grid-index .bannerDerecho img {
-  height: 50vw;
-  width: 20vw;
+  height: 50vh;
+  width: 20vh;
 }
 
-.imgQuienesSomosBanner {
+.sectionBannerQuienesSomos h1 {
+  text-align: center;
+}
+.sectionBannerQuienesSomos .imgQuienesSomosBanner {
   width: 100%;
   height: 200px;
 }
@@ -89,7 +92,7 @@ header .menu .container {
 }
 .sectionBannerQueHacemos img {
   width: 100%;
-  height: 15vw;
+  height: 20vh;
 }
 .sectionBannerQueHacemos h1 {
   text-align: center;
@@ -158,9 +161,6 @@ main {
 
 .encabezadoPublicaciones {
   text-align: center;
-  background-color: #F4F3E2;
-}
-.encabezadoPublicaciones h1 {
   background-color: #F4F3E2;
 }
 
@@ -308,7 +308,7 @@ footer .sectionFooter .divRightFooter img {
     width: 100%;
   }
   header img {
-    height: 25vw;
+    height: 25vh;
   }
   .contenedor-grid-index {
     display: grid;
@@ -323,8 +323,8 @@ footer .sectionFooter .divRightFooter img {
     text-align: center;
   }
   .contenedor-grid-index .bannerIzquierdo img {
-    height: 60vw;
-    width: 50vw;
+    height: 60vh;
+    width: 50vh;
   }
   .contenedor-grid-index .bannerDerecho {
     grid-area: bannerDer;
@@ -332,8 +332,8 @@ footer .sectionFooter .divRightFooter img {
     text-align: center;
   }
   .contenedor-grid-index .bannerDerecho img {
-    height: 80vw;
-    width: 50vw;
+    height: 80vh;
+    width: 50vh;
   }
   .divPrincipalQueHacemos-grid {
     text-align: center;
@@ -383,6 +383,9 @@ footer .sectionFooter .divRightFooter img {
     height: 35vw;
     width: 35vw;
   }
+  .divPrincipalPublicaciones-grid .card-CantidadProteina button {
+    font-size: small;
+  }
   .divPrincipalPublicaciones-grid .card-CantidadEjercicio {
     width: 75vw;
     margin-bottom: 10px;
@@ -391,6 +394,9 @@ footer .sectionFooter .divRightFooter img {
     height: 35vw;
     width: 35vw;
   }
+  .divPrincipalPublicaciones-grid .card-CantidadEjercicio button {
+    font-size: small;
+  }
   .divPrincipalPublicaciones-grid .card-LeerLibro {
     width: 75vw;
     margin-bottom: 10px;
@@ -398,6 +404,9 @@ footer .sectionFooter .divRightFooter img {
   .divPrincipalPublicaciones-grid .card-LeerLibro img {
     height: 35vw;
     width: 35vw;
+  }
+  .divPrincipalPublicaciones-grid .card-LeerLibro button {
+    font-size: small;
   }
   footer .divLeftFooter img {
     width: 15vw;

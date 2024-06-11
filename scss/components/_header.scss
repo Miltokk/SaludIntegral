@@ -1,16 +1,16 @@
 /* HEADER */
 header{
-    background-color: #F4F3E2;     
+    background-color: $primary-color;     
     display:flex;
     img {
         padding-left:0 ;
-        width: 100vw;
-        height: 15vw;
+        width: 100vh;
+        height: 15vh;
     } 
 
     .menu{
-        background-color: #F4F3E2;
-        width: 100vw;
+        background-color: $primary-color;
+        width: 100vh;
         .container{
             align-items: center;
         }

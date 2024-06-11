@@ -1,7 +1,6 @@
-
 .contenedor-grid-index{
     display: grid;
-    background-color: #F4F3E2;
+    background-color: $primary-color;
     grid-template-columns: 0.2fr 1fr 0.2fr;
     grid-template-rows: 0.5fr 3fr ;
     grid-template-areas: 
@@ -27,18 +26,18 @@
 
     .bannerIzquierdo{
         grid-area: bannerIz;
-        background-color:#F4F3E2;
+        background-color:$primary-color;
         img{
-            height: 50vw;
-            width: 20vw;
+            height: 50vh;
+            width: 20vh;
         }
     }
     .bannerDerecho{
         grid-area: bannerDer;
-        background-color:#F4F3E2;
+        background-color:$primary-color;
         img{
-            height: 50vw;
-            width: 20vw;
+            height: 50vh;
+            width: 20vh;
         }
     }
 }

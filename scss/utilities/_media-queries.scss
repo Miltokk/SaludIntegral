@@ -1,14 +1,14 @@
 @media screen and (max-width: 768px) {
 // GlobalHeaderMedia
     header{       
-        background-color: #F4F3E2;
+        background-color: $primary-color;
         display: flex;
         flex-wrap: wrap;    
         button {
         width: 100%;
         }  
         img{
-            height:25vw;
+        height:25vh;
         }   
     }
 
@@ -16,7 +16,7 @@
 // Index
     .contenedor-grid-index{
         display: grid;
-        background-color: #F4F3E2;
+        background-color: $primary-color;
         grid-template-columns: 1.5fr;
         grid-template-rows: 0.1fr 1.5fr 0.3fr 0.3fr;
         grid-template-areas: 
@@ -26,21 +26,21 @@
         "bannerDer";
         .bannerIzquierdo{
             grid-area: bannerIz;
-            background-color:#F4F3E2;
+            background-color:$primary-color;
             text-align: center;
             img{
-                height: 60vw;
-                width: 50vw;
+                height: 60vh;
+                width: 50vh;
             }
         }
 
         .bannerDerecho{
             grid-area: bannerDer;
-            background-color:#F4F3E2;
+            background-color:$primary-color;
             text-align: center;
             img{
-                height: 80vw;
-                width: 50vw;
+                height: 80vh;
+                width: 50vh;
             }
         }
     }
@@ -51,7 +51,7 @@
     .divPrincipalQueHacemos-grid{
         text-align: center;
         display: flex;
-        background-color: #F4F3E2;
+        background-color: $primary-color;
         flex-wrap: wrap;
         align-items: center;
         padding-bottom: 5px;
@@ -91,7 +91,7 @@
     .divPrincipalPublicaciones-grid{
         text-align: center;
         display: flex;
-        background-color: #F4F3E2;
+        background-color: $primary-color;
         flex-wrap: wrap;
         align-items: center;
         padding-bottom: 5px;
@@ -102,6 +102,9 @@
                 height: 35vw;
                 width: 35vw;
             }
+            button{
+                font-size: small;
+            }
         }
 
         .card-CantidadEjercicio{
@@ -111,6 +114,9 @@
                 height: 35vw;
                 width: 35vw;
             }
+            button{
+                font-size: small;
+            }
         }
 
         .card-LeerLibro{
@@ -119,6 +125,9 @@
             img{
                 height: 35vw;
                 width: 35vw;
+            }
+            button{
+                font-size: small;
             }
 
         }
